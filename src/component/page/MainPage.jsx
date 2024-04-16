@@ -25,9 +25,9 @@ const ConfirmationImg = styled.img`
 
 const formFields = [
   { label: "성명", state: "name" },
-  { label: "주민등록번호 앞자리", state: "jumin1" },
+  { label: "생일 8자리", state: "jumin1" },
   { label: "주민등록번호 뒷자리", state: "jumin2" },
-  { label: "전화번호", state: "phone" },
+  { label: "전화번호(010 제외)", state: "phone" },
   { label: "여권번호", state: "passportNum" },
   { label: "발급일", state: "issueDate" },
   { label: "만료일", state: "expireDate" },
@@ -50,6 +50,38 @@ const Submit = (props) => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+
+    let requiredFields = formFields.map(function (element) {
+      return element.state;
+    });
+
+    for (const field of requiredFields) {
+      if (!formData[field]) {
+        const label = formFields.find((item) => item.state === field).label;
+        alert(`${label}을(를) 입력해주세요.`);
+        return;
+      }
+    }
+
+    if (formData.jumin1.length !== 8) {
+      alert("생일은 8자리의 숫자여야 합니다.");
+      return;
+    }
+
+    if (formData.phone.length !== 8) {
+      alert("전화번호는 8자리여야 합니다.");
+      return;
+    }
+
+    const dateRegex = /^\d{4}\d{2}\d{2}$/;
+    if (
+      !dateRegex.test(formData.issueDate) ||
+      !dateRegex.test(formData.expireDate)
+    ) {
+      alert("날짜 형식이 올바르지 않습니다. (YYYYMMDD 형식)");
+      return;
+    }
+
 
     try {
       navigate("/auth");

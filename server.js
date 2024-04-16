@@ -3,7 +3,6 @@ const path = require('path');
 const app = express();
 const puppeteer = require('puppeteer');
 const bodyParser = require('body-parser');
-const { v4: uuidv4 } = require('uuid');
 const http = require('http').createServer(app);
 
 
@@ -21,7 +20,7 @@ let page; // Declare page outside of the function
 async function connectGoverment24() {
     try {
         const browser = await puppeteer.launch({
-            headless: false,
+            headless: true,
             defaultViewport: null,
             args: [
                 '--no-sandbox',
@@ -49,7 +48,6 @@ async function connectGoverment24() {
 connectGoverment24();
 
 app.post('/processInput', async (req, res) => {
-    console.log("asdjadas");
     try {
 
         const inputData = {
@@ -95,7 +93,7 @@ app.post('/processInput', async (req, res) => {
             return foundItems;
         });
 
-        await page.type('input[data-id="oacx_num1"]', inputData.jumin1);
+        await page.type('input[data-id="oacx_num1"]', modifiedJumin1);
         await page.type('input[data-id="oacx_num2"]', inputData.jumin2);
         await page.type('input[data-id="oacx_phone2"]', inputData.phone);
         await page.click('#totalAgree');
@@ -105,7 +103,7 @@ app.post('/processInput', async (req, res) => {
         res.json({ 'result': 'GOOD' });
     } catch (error) {
         console.error('Error in connectGoverment24: ', error);
-        res.json({ 'result': 'FAILD' });
+        res.json({ 'result': null });
     }
 
 });
