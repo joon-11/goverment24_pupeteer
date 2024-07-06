@@ -9,8 +9,10 @@ function Auth(props) {
   const handleSubmit = async () => {
     setIsLoading(true); // Set loading to true when submitting form
     try {
+      console.log("asd");
       const response = await axios.post("http://localhost:8080/result");
-      navigate("/result", { state: { result: response.data.result } }); // Navigate to "/result" with the result as state
+      console.log(response.data);
+      navigate("/result", { state: { result: response.data } }); // Navigate to "/result" with the result as state
     } catch (error) {
       console.error("Error submitting form:", error);
       // Handle error
