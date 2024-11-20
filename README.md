@@ -28,28 +28,21 @@ Backend : express.js
 <br />
 
 ## 🤩 Preview
-로그인 화면
-<img width="1251" alt="스크린샷 2024-05-04 오후 5 47 12" src="https://github.com/user-attachments/assets/60e5ab3f-61fb-458b-8d03-87f7184b0782">
-<br />
+여권정보 입력 화면
+<img width="1021" alt="스크린샷 2024-08-22 오후 1 11 14" src="https://github.com/user-attachments/assets/8aba3ad5-bd43-468b-ac8c-e71a564b6353">
 
-회원가입 화면
-<img width="1174" alt="스크린샷 2024-05-04 오후 5 47 24" src="https://github.com/user-attachments/assets/c47cecfa-11b8-4a4a-b948-e8905d2577a7">
-<br />
+스크래핑 동작 화면
+<img width="1182" alt="스크린샷 2024-07-06 오후 4 11 55" src="https://github.com/user-attachments/assets/ce995a82-39a9-4992-ba38-f0dbc12a2e2a">
 
-메인화면
-<img width="1152" alt="스크린샷 2024-05-04 오후 5 47 34" src="https://github.com/user-attachments/assets/a5745f5d-bd4d-4760-94e2-1216630c5958">
-<br />
+결과(유효한 여권이면)
+<img width="1914" alt="스크린샷 2024-07-06 오후 4 21 38" src="https://github.com/user-attachments/assets/9e25cbc1-7b84-4583-962a-fa93f548d469">
 
-투표화면
-<img width="1248" alt="스크린샷 2024-05-04 오후 5 48 07" src="https://github.com/user-attachments/assets/f526aa86-7417-4cf0-8cc6-7be676cc86b4">
-<br />
+결과2(유효하지 않은 여권)
+<img width="1909" alt="스크린샷 2024-07-06 오후 4 22 10" src="https://github.com/user-attachments/assets/1d64c394-9907-41a1-ad71-eb6f6791b273">
 
-관리자 화면
-<img width="1230" alt="스크린샷 2024-05-04 오후 5 48 15" src="https://github.com/user-attachments/assets/938f3fb9-2038-42db-ba1e-6423e2cc99e8">
-<br />
+스크래핑 동작 결과 화면
+<img width="1012" alt="스크린샷 2024-07-06 오후 4 26 04" src="https://github.com/user-attachments/assets/61e13517-42e5-4e3b-be96-495ec1e9dc75">
 
-결과화면
-<img width="1180" alt="스크린샷 2024-05-04 오후 5 48 31" src="https://github.com/user-attachments/assets/9bf567fc-2bab-4be0-81d6-fbac249cef0f">
 
 
 
