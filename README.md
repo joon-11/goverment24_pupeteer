@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# 여권 등록 플랫폼
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+###### 2024.7 (1人 개인 프로젝트)
 
-## Available Scripts
+<br />
 
-In the project directory, you can run:
+## 📌 Summary
 
-### `npm start`
+**여권 유무를 정부24 스크래핑을 통해 가져오는 시스템**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 여권정보를 입력하여 이 여권이 유효한 여권인지 알 수 있음.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br />
 
-### `npm test`
+## 🤔 Background
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+정부24 스크래핑을 통해 여권정보를 입력하고 반환하여 실제 존재하는 여권이면 DB에 저장하는 방식
 
-### `npm run build`
+<br />
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🔨 Technology Stack(s)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Frontend : node.js(React)
+<br />
+Backend : express.js
 
-### `npm run eject`
+<br />
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🤩 Preview
+로그인 화면
+<img width="1251" alt="스크린샷 2024-05-04 오후 5 47 12" src="https://github.com/user-attachments/assets/60e5ab3f-61fb-458b-8d03-87f7184b0782">
+<br />
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+회원가입 화면
+<img width="1174" alt="스크린샷 2024-05-04 오후 5 47 24" src="https://github.com/user-attachments/assets/c47cecfa-11b8-4a4a-b948-e8905d2577a7">
+<br />
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+메인화면
+<img width="1152" alt="스크린샷 2024-05-04 오후 5 47 34" src="https://github.com/user-attachments/assets/a5745f5d-bd4d-4760-94e2-1216630c5958">
+<br />
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+투표화면
+<img width="1248" alt="스크린샷 2024-05-04 오후 5 48 07" src="https://github.com/user-attachments/assets/f526aa86-7417-4cf0-8cc6-7be676cc86b4">
+<br />
 
-## Learn More
+관리자 화면
+<img width="1230" alt="스크린샷 2024-05-04 오후 5 48 15" src="https://github.com/user-attachments/assets/938f3fb9-2038-42db-ba1e-6423e2cc99e8">
+<br />
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+결과화면
+<img width="1180" alt="스크린샷 2024-05-04 오후 5 48 31" src="https://github.com/user-attachments/assets/9bf567fc-2bab-4be0-81d6-fbac249cef0f">
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
